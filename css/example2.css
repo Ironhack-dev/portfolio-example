@@ -49,7 +49,6 @@ p, h1, h2, h3 {
 h1, h2{
   font-size: 60px;
   line-height: 84px;
-  color: #21274C;
   font-family: "Lato-Bold";
   width: 80%;
 }
@@ -67,6 +66,8 @@ h1, h2{
 .filter-p {
   text-decoration: underline;
   cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .filter-p:not(:last-child) {
@@ -76,14 +77,11 @@ h1, h2{
 .project {
   display: flex;
   align-items: center;
+  margin-top: 0;
 }
 
 .project:not(:last-child) {
   margin-bottom: 96px;
-}
-
-.project-image {
-  flex: 1;
 }
 
 .description-right {
@@ -138,6 +136,7 @@ a {
   font-size: 20px;
   line-height: 28px;
   color: black;
+  font-family: "Lato-Regular";
 }
 
 a:hover {
@@ -171,6 +170,7 @@ footer {
 .footer-link {
   display: block;
   text-align: right;
+  text-decoration: none;
 }
 
 .media-links {
@@ -188,4 +188,157 @@ footer {
 
 .media-links img:not(:last-child) {
   margin-right: 33px;
+}
+
+@media only screen and (max-width: 415px) {
+  .logo-container{
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding-top: 16px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo-container img{
+    width: 130px;
+    height: 32px;
+  }
+  
+  .page-container {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 48px;
+    max-width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .filters {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-p {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .filter-p:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .projects-container {
+    margin: 58px 0px 0;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project-image {
+    width: 100%;
+
+  }
+  .project-description {
+    width: 100%;
+    padding: 24px 8px 0;
+  }
+  
+  .project:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  
+  .description-right {
+    margin-left: 0;
+  }
+  
+  .description-left {
+    margin-right: 0px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Lato-Regular";
+    margin-bottom: 16px;
+  }
+  
+  p {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .project-info {
+    margin-bottom: 24px;
+  }
+
+  .project-description a {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .project-button {
+    min-height: 32px;
+    width: 151px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 24px;
+  }
+
+  .footer-description, .footer-media {
+    width: 100%;
+  }
+
+  .footer-p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .footer-links {
+    margin-top: 25px;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .media-links {
+    margin-top: 32px;
+    text-align: right;
+    text-align: center;
+  }
+  
+  .media-links a {
+    text-decoration: none;
+  }
+  
+  .media-links img {
+    object-fit: cover;
+  }
+  
+  .media-links img:not(:last-child) {
+    margin-right: 33px;
+  }
 }

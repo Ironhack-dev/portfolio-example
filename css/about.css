@@ -70,12 +70,9 @@ h3 {
   align-items: center;
 }
 
-.about-description {
-  flex: 1;
-}
 
 .about-image {
-  flex: 1;
+  
   margin-right: 89px;
 }
 
@@ -136,6 +133,7 @@ a {
   font-size: 20px;
   line-height: 28px;
   color: black;
+  font-family: "Lato-Regular";
 }
 
 a:hover {
@@ -171,6 +169,7 @@ footer {
 .footer-link {
   display: block;
   text-align: right;
+  text-decoration: none;
 }
 
 .media-links {
@@ -188,4 +187,154 @@ footer {
 
 .media-links img:not(:last-child) {
   margin-right: 33px;
+}
+
+@media only screen and (max-width: 415px) {
+  .logo-container{
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding-top: 16px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo-container img{
+    width: 130px;
+    height: 32px;
+  }
+  
+  .page-container {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 48px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 17px;
+    margin-left: 8px;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 8px;
+  }
+
+  .about-me {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .about-description {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  
+  .about-image {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .logos-container {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 72px;
+    row-gap: 35px;
+  }
+
+  .logos-container img {
+    width: 94px;
+    height: 23px;
+  }
+
+  .logos-container img:nth-child(2n) {
+    justify-self: start;
+  }
+
+  .logos-container img:nth-child(2n+1) {
+    justify-self: end;
+  }
+
+  .contact-sentence {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contact {
+    margin-top: 77px;
+  }
+
+  .project-button {
+    min-height: 32px;
+    width: 151px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 24px;
+  }
+
+  .footer-description, .footer-media {
+    width: 100%;
+  }
+
+  .footer-p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .footer-links {
+    margin-top: 25px;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .media-links {
+    margin-top: 32px;
+    text-align: right;
+    text-align: center;
+  }
+  
+  .media-links a {
+    text-decoration: none;
+  }
+  
+  .media-links img {
+    object-fit: cover;
+  }
+  
+  .media-links img:not(:last-child) {
+    margin-right: 33px;
+  }
 }

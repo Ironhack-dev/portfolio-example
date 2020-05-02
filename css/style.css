@@ -24,6 +24,7 @@ body {
 
 img {
   object-fit: contain;
+  max-width: 100%;
 }
 
 p, h1, h2, h3 {
@@ -60,6 +61,10 @@ h1, h2{
 .project {
   display: flex;
   align-items: center;
+}
+
+.project-image, .project-description {
+  width: 50%;
 }
 
 .project:not(:first-child) {
